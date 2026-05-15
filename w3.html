@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glow Beauty Studio</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        background: #fff7fb;
+        color: #333;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 60px;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        position: sticky;
+        top: 0;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #e91e63;
+    }
+
+    nav a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+    }
+
+    nav a:hover {
+        color: #e91e63;
+    }
+
+    .hero {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                    url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1400&q=80');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero p {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        background: #e91e63;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #c2185b;
+        transform: scale(1.05);
+    }
+
+    section {
+        padding: 60px;
+        text-align: center;
+    }
+
+    .services {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        width: 250px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+        color: #e91e63;
+    }
+
+    footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">GlowBeauty</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1>Enhance Your Natural Beauty</h1>
+        <p>Professional beauty care, skincare & makeup services</p>
+        <button class="btn" onclick="bookAppointment()">Book Appointment</button>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <br><br>
+    <div class="services">
+        <div class="card">
+            <h3>Facial Treatment</h3>
+            <p>Glow-boosting skincare for all skin types.</p>
+        </div>
+        <div class="card">
+            <h3>Makeup</h3>
+            <p>Professional makeup for weddings & events.</p>
+        </div>
+        <div class="card">
+            <h3>Hair Styling</h3>
+            <p>Trendy cuts, styling & hair care solutions.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p style="max-width:700px;margin:auto;margin-top:20px;">
+        GlowBeauty is a modern beauty studio dedicated to enhancing your natural charm.
+        We provide high-quality beauty treatments with professional care and premium products.
+    </p>
+    <section id="about">
+    <h2>About Us</h2>
+
+    <div style="max-width:1000px;margin:40px auto;text-align:left;line-height:1.7;">
+
+        <h3 style="color:#e91e63;">Our Story</h3>
+        <p>
+            GlowBeauty started with a simple mission — to help people feel confident in their own skin.
+            What began as a small home-based beauty service has now grown into a trusted beauty studio
+            offering premium skincare, makeup, and hair styling services.
+        </p>
+
+        <br>
+
+        <h3 style="color:#e91e63;">Our Mission</h3>
+        <p>
+            We believe beauty is not about changing who you are, but enhancing your natural features.
+            Our mission is to provide high-quality, safe, and personalized beauty treatments that bring
+            out the best version of you.
+        </p>
+
+        <br>
+
+        <h3 style="color:#e91e63;">Why Choose Us?</h3>
+        <ul style="padding-left:20px;">
+            <li>✔ Certified professional beauticians</li>
+            <li>✔ Premium quality skincare products</li>
+            <li>✔ Hygienic and relaxing environment</li>
+            <li>✔ Personalized beauty consultation</li>
+            <li>✔ Affordable pricing with premium results</li>
+        </ul>
+
+        <br>
+
+        <h3 style="color:#e91e63;">Our Values</h3>
+        <p>
+            Trust, care, and excellence are at the heart of everything we do.
+            We focus on customer satisfaction and long-term relationships rather than just services.
+        </p>
+
+        <br>
+
+        <h3 style="color:#e91e63;">Our Promise</h3>
+        <p>
+            Every client who walks into GlowBeauty leaves feeling refreshed, confident, and beautiful.
+            We promise consistency, quality, and a luxury experience every time.
+        </p>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p style="margin-top:15px;">Email: contact@glowbeauty.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <section id="contact">
+    <h2>Contact Us</h2>
+
+    <p style="margin-top:10px;">
+        We’d love to hear from you! Book an appointment or ask any questions below.
+    </p>
+
+    <div style="max-width:1000px;margin:40px auto;display:flex;flex-wrap:wrap;gap:30px;justify-content:center;">
+
+        <!-- Contact Info -->
+        <div style="flex:1;min-width:250px;text-align:left;background:white;padding:20px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+            <h3 style="color:#e91e63;">Get in Touch</h3>
+            <p>📍 Location: Beauty Street,mahalingpur, India</p>
+            <p>📞 Phone: +91 8618103857</p>
+            <p>📧 Email: arunachvan0@gmail.com</p>
+            <p>⏰ Timing: Mon - Sun (9 AM - 8 PM)</p>
+
+            <br>
+
+            <button onclick="openWhatsApp()" class="btn" style="width:100%;">
+                Chat on WhatsApp
+            </button>
+        </div>
+
+        <!-- Contact Form -->
+        <div style="flex:1;min-width:250px;background:white;padding:20px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+            <h3 style="color:#e91e63;">Send a Message</h3>
+
+            <input id="name" type="text" placeholder="Your Name"
+                style="width:100%;padding:10px;margin:10px 0;border:1px solid #ccc;border-radius:8px;">
+
+            <input id="email" type="email" placeholder="Your Email"
+                style="width:100%;padding:10px;margin:10px 0;border:1px solid #ccc;border-radius:8px;">
+
+            <textarea id="message" placeholder="Your Message"
+                style="width:100%;padding:10px;margin:10px 0;border:1px solid #ccc;border-radius:8px;height:120px;"></textarea>
+
+            <button class="btn" onclick="submitForm()" style="width:100%;">
+                Send Message
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Map Placeholder -->
+    <div style="max-width:1000px;margin:20px auto;">
+        <div style="background:#eee;height:250px;border-radius:12px;display:flex;align-items:center;justify-content:center;">
+            <p>📍 Google Map Location Coming Here</p>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 GlowBeauty. All Rights Reserved.</p>
+</footer>
+
+<script>
+    function bookAppointment() {
+        
+        document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+
+      
+        setTimeout(() => {
+            alert("Please contact us to book your appointment!");
+        }, 500);
+    }
+</script>
+
+</body>
+</html>
